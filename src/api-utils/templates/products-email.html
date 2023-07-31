@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Available Products</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        color: #3b3b3b;
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      body > div {
+        width: max-content;
+        box-shadow: 0 2px 8px #00000042;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        overflow: hidden;
+        background: #f3dde1;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        margin-bottom: 0.5rem;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      h1,
+      h2,
+      p {
+        margin-bottom: 0.5rem;
+      }
+
+      strong {
+        color: red;
+      }
+
+      img {
+        width: 8rem;
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        margin-left: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Available Products</h1>
+    {{#each products}}
+    <div>
+      <a href={{this.url}} target='_blank' rel='nofollow noopener noreferrer'>
+        <h2>{{this.name}}</h2>
+        <p style="text-transform: capitalize;">{{this.store}}</p>
+        {{#if this.currentPrice}}
+        <p>Price: {{ this.currentPrice}}</p>
+        <p>Available Sizes: {{this.availableSizes}}</p>
+        {{else}}
+        <strong>It seems this product is not currently available anymore!</strong>
+        {{/if}}
+        <img src="{{this.photoUrl}}" alt="{{this.name}}" />
+        </a>
+      </div>
+    {{/each}}
+  </body>
+</html>

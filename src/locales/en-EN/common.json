@@ -1,0 +1,22 @@
+{
+  "areYouSure": "Are you sure you want to delete product \n {{name}}?",
+  "back": "Back",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "deleteAccountSuccess": "Your account was deleted!",
+  "deleteProduct": "Delete product?",
+  "editProduct": "Edit product",
+  "enterSizesToWatch": "Enter sizes to watch separated by a comma e.g. s,m",
+  "generalError": "An error occurred. Please try again!",
+  "pageNotFound": "404 - Page not found",
+  "productAlreadyWatched": "You are already watching this product!",
+  "productCreateSuccess": "Product was created!",
+  "productDeletedSuccess": "Product was deleted!",
+  "productNotExist": "Product doesn't exist. Please check the url!",
+  "productUpdateSuccess": "Product was updated!",
+  "save": "Save",
+  "sizesNotAvailable": "Size(s) {{sizes}} don't/doesn't exist for this product.",
+  "sizesToWatch": "Sizes to watch",
+  "storeNotSupported": "This url belongs to a store that is not currently supported.",
+  "userUpdateSuccess": "Your data was updated!"
+}

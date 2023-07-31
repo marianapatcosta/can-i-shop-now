@@ -1,0 +1,52 @@
+.product-not-available {
+  @apply text-2xl text-highlight font-bold uppercase pl-2;
+}
+
+.product-content {
+  @apply flex flex-col gap-3 md:gap-5 my-2;
+}
+
+.image {
+  @apply relative w-72;
+}
+
+.name {
+  @apply first-letter:capitalize leading-6 text-start md:text-center;
+}
+
+.store {
+  @apply capitalize bg-highlight text-white rounded-2xl px-2 py-0.5 w-max md:mx-auto mb-4;
+}
+
+.sizes {
+  @apply flex gap-1;
+}
+
+.size {
+  @apply px-1 border border-gray-300 rounded-sm text-sm;
+}
+
+.size-not-available {
+  @apply opacity-30;
+}
+
+.current-price {
+  @apply font-bold text-2xl;
+}
+
+.current-price--highlighted {
+  @apply text-highlight;
+}
+
+.original-price {
+  @apply line-through;
+}
+
+.link {
+  @apply flex items-center ml-auto mt-auto w-max text-highlight text-lg relative after:absolute after:h-0.5 after:bg-highlight after:bottom-0 after:rounded-sm after:left-0 after:w-0 after:hover:w-full after:transition-all after:duration-150 after:ease-in-out;
+}
+
+
+.product-graphic {
+  @apply bg-secondary w-full flex gap-3 p-2 shadow-md rounded-md my-4;
+}

@@ -1,0 +1,17 @@
+{
+  "areYouSureDeleteUser": "Are you sure you want to delete your account?",
+  "city": "City",
+  "country": "Country",
+  "darkMode": "Dark theme",
+  "deleteAccount": "Delete account",
+  "deleteAccount1": "Delete account?",
+  "email": "E-mail",
+  "english": "english",
+  "locale": "Locale",
+  "logout": "Logout",
+  "name": "Name",
+  "portuguese": "portuguese",
+  "profile": "User's profile",
+  "settings": "Settings",
+  "zipCode": "Zip code"
+}

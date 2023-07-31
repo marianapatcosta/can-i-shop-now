@@ -1,0 +1,49 @@
+.select {
+  @apply relative max-w-[10rem];
+}
+
+.select__header {
+  @apply flex justify-between items-center w-full h-8 truncate leading-6 pr-2 ml-[1px] cursor-pointer border border-highlight rounded-lg shadow-lg disabled:select-none disabled:cursor-default disabled:opacity-50;
+}
+
+.select__header > a {
+  @apply w-auto pointer-events-none;
+}
+
+.select__header--expanded {
+  @apply shadow-lg;
+}
+
+.select__header > svg {
+  @apply mr-2 rotate-0 transition duration-200 ease-in-out;
+}
+
+.select__header--expanded > svg {
+  @apply rotate-180;
+}
+
+.select__header--error {
+  @apply border border-red-800;
+}
+
+.select__options {
+  @apply bg-secondary m-0 p-0 mb-8 w-full h-0 overflow-y-scroll overflow-x-hidden z-[1] transition-height duration-200 ease-in-out rounded-lg absolute hover:bg-secondary;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.select__options::-webkit-scrollbar {
+  display: none;
+}
+
+.select__options--expanded {
+  @apply mt-1 shadow-xl h-auto;
+}
+
+.select__options > li {
+  @apply truncate cursor-pointer transition-colors duration-300 ease-in-out border-b hover:bg-primary last:border-b-0;
+}
+
+.select__error {
+  @apply bg-red-800 text-sm font-bold mt-2 pl-2;
+}

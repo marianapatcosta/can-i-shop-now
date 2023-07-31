@@ -1,0 +1,19 @@
+.switcher {
+  @apply flex items-end w-12 text-sm cursor-pointer;
+}
+
+.switcher > input[type='checkbox'] {
+  @apply opacity-0 w-0 h-0;
+}
+
+.switcher__slider {
+  @apply flex justify-between items-end rounded-[34px] border-highlight border h-4 w-10 leading-3 relative transition p-1 after:-translate-x-[1px] after:shadow-md after:bg-pink-400 after:rounded-full after:h-5 after:w-5 after:absolute after:inset-0 after:my-auto after:transition after:duration-300;
+}
+
+.switcher__slider--disabled {
+  @apply opacity-30 border-gray-600 pointer-events-none cursor-default after:bg-gray-600 after:opacity-75;
+}
+
+.switcher > input[type='checkbox']:checked + .switcher__slider {
+  @apply bg-secondary after:translate-x-[100%] after:bg-highlight;
+}

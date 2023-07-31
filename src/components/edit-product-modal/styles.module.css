@@ -1,0 +1,15 @@
+.edit-product-modal h1 {
+  @apply text-base;
+}
+
+.edit-product-modal main {
+  @apply flex-col mb-0;
+}
+
+.edit-product-modal form {
+  @apply border border-secondary w-full px-2 py-4 mt-4 rounded-lg;
+}
+
+.edit-product-modal form > button[type='submit'] {
+  @apply w-full sm:w-32 block mt-8 mb-2 mx-auto bg-highlight;
+}

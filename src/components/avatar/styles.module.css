@@ -1,0 +1,15 @@
+.avatar {
+  @apply rounded-full shadow-lg w-12 h-12 bg-secondary overflow-hidden;
+}
+
+.avatar--small {
+  @apply w-12 h-12;
+}
+
+.avatar--medium {
+  @apply w-16 h-16;
+}
+
+.avatar--big {
+  @apply w-24 h-24;
+}

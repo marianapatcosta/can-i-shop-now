@@ -1,0 +1,18 @@
+{
+  "addOne": "Adicione um!",
+  "ascOrder": "Ordem ascendente",
+  "ascOrderLabel": "Clique para ordenar de forma ascendente",
+  "availableSizes": "Tamanhos disponíveis",
+  "descOrder": "Ordem descendente",
+  "descOrderLabel": "Clique para ordenar de forma descendente",
+  "goToShop": "Ver na loja",
+  "name": "Nome",
+  "noProducts": "Não há produtos para mostrar!",
+  "productNotAvailable": "Produto indisponível",
+  "sizesToWatch": "Tamanhos a vigiar",
+  "store": "Loja",
+  "unique": "Único",
+  "unavailable": "Índisponível",
+  "updatedAt": "Última actualização",
+  "yourProducts": "Os seus produtos"
+}

@@ -1,0 +1,39 @@
+.user {
+  @apply flex flex-col;
+}
+
+.user h2 {
+  @apply mb-2;
+}
+
+.user > * {
+  @apply my-3 md:my-6;
+}
+
+.user__header {
+  @apply flex gap-6 flex-col md:flex-row;
+}
+
+.user__form {
+  @apply relative border border-secondary px-2 py-6 rounded-lg flex gap-4 flex-col;
+}
+
+.user__form > div {
+  @apply w-full flex flex-col md:flex-row gap-4;
+}
+
+.user__form > div > div {
+  @apply w-full;
+}
+
+.user__form .edit-button {
+  @apply absolute -top-2 -right-2 border-highlight bg-secondary;
+}
+
+.user__settings {
+  @apply flex gap-6 flex-col md:flex-row;
+}
+
+.user__buttons > button {
+  @apply w-full sm:w-32 block mb-4;
+}

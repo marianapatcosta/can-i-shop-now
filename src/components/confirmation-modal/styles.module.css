@@ -1,0 +1,15 @@
+.confirmation-modal h1 {
+  @apply text-base;
+}
+
+.confirmation-modal__main {
+  @apply w-full h-12 mt-8 text-center;
+}
+
+.confirmation-modal__footer {
+  @apply flex justify-center gap-2 mt-4;
+}
+
+.confirmation-modal__footer > button {
+  @apply flex-1;
+}

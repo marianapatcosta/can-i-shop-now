@@ -1,0 +1,19 @@
+.toast {
+  @apply w-80 fixed right-2 md:right-8 top-4 p-4 z-[150] rounded-[0.25rem] bg-secondary shadow-2xl animate-enter-right;
+}
+
+.toast--dismissing {
+  @apply animate-exit-right;
+}
+
+.toast__close-button {
+  @apply absolute right-2 top-2 hover:rotate-90 transition duration-200 ease-in-out;
+}
+
+.toast__content {
+  @apply flex items-center mt-2;
+}
+
+.toast__message {
+  @apply text-sm leading-6 whitespace-pre-line mt-2 ml-4;
+}

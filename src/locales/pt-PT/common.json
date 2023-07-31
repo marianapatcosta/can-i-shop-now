@@ -1,0 +1,22 @@
+{
+  "areYouSure": "Tem a certeza que pretende eliminar o produto \n {{name}}?",
+  "back": "Voltar",
+  "cancel": "Cancelar",
+  "confirm": "Confirmar",
+  "deleteAccountSuccess": "A sua conta foi apagada!",
+  "deleteProduct": "Apagar produto?",
+  "editProduct": "Editar produto",
+  "enterSizesToWatch": "Insira os tamanhos a vigiar separados por vírgula ex: s,m",
+  "generalError": "Ocorreu um erro. Por favor tente novamente!",
+  "pageNotFound": "404 - Página não encontrada",
+  "productAlreadyWatched": "Já está a vigiar este producto!",
+  "productCreateSuccess": "O produto foi criado!",
+  "productDeletedSuccess": "O produto foi eliminado!",
+  "productNotExist": "Produto não existe. Por favor verifique o url!",
+  "productUpdateSuccess": "O producto foi actualizado!",
+  "save": "Guardar",
+  "sizesNotAvailable": "O(s) tamanho(s) {{sizes}} não existe(m) para este product.",
+  "sizesToWatch": "Tamanhos a vigiar",
+  "storeNotSupported": "Este url pertence a uma loja que não é atualmente suportada.",
+  "userUpdateSuccess": "Os seus dados foram actualizados!"
+}

@@ -1,0 +1,9 @@
+{
+  "addNew": "Add new product",
+  "enterSizesToWatch": "Enter sizes to watch separated by a comma e.g. s,m",
+  "enterUrl": "Enter product URL",
+  "save": "Save",
+  "storesSupported": "Stores currently supported:",
+  "sizesToWatch": "Sizes to watch",
+  "url": "URL"
+}

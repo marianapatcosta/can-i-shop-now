@@ -1,0 +1,18 @@
+{
+  "addOne": "Add one!",
+  "ascOrder": "Ascending order",
+  "ascOrderLabel": "Click to ascending order",
+  "availableSizes": "Sizes available",
+  "descOrder": "Descending order",
+  "descOrderLabel": "Click to descending order",
+  "goToShop": "Go to shop",
+  "name": "Name",
+  "noProducts": "No products to display",
+  "productNotAvailable": "Product not available",
+  "sizesToWatch": "Sizes to watch",
+  "store": "Store",
+  "unique": "Unique",
+  "unavailable": "Unavailable",
+  "updatedAt": "Last update",
+  "yourProducts": "Your products"
+}

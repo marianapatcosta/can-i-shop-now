@@ -1,0 +1,9 @@
+{
+  "addNew": "Adicionar novo produto",
+  "enterSizesToWatch": "Insira os tamanhos a vigiar separados por vírgula ex: s,m",
+  "enterUrl": "Insira o URL do produto",
+  "save": "Guardar",
+  "storesSupported": "Lojas suportadas atualmente:",
+  "sizesToWatch": "Tamanhos a vigiar",
+  "url": "URL"
+}

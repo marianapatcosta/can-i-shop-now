@@ -1,0 +1,59 @@
+.product {
+  @apply bg-secondary w-full flex gap-3 p-2 shadow-md rounded-md hover:shadow-lg transition duration-150 ease-in-out;
+}
+
+.product--not-available {
+  @apply before:absolute before:text-right before:inset-0 before:w-[90%] before:h-min before:my-auto before:ml-8 before:content-[attr(data-text)] before:text-pink-500 before:-rotate-6 before:text-5xl md:before:text-8xl before:opacity-20;
+}
+
+.product-content {
+  @apply flex gap-3 md:gap-5 my-2;
+}
+
+.image {
+  @apply relative w-36;
+}
+
+.name {
+  @apply text-lg first-letter:capitalize mb-1 leading-4;
+}
+
+.store {
+  @apply text-xs capitalize bg-highlight text-white rounded-lg px-1 py-0.5 w-max;
+}
+
+.sizes {
+  @apply flex gap-1;
+}
+
+.size {
+  @apply px-1 border border-gray-300 rounded-sm text-sm;
+}
+
+.size-not-available {
+  @apply opacity-30;
+}
+
+.current-price {
+  @apply font-bold text-lg;
+}
+
+.current-price--highlighted {
+  @apply text-highlight;
+}
+
+.original-price {
+  @apply line-through;
+}
+
+.link {
+  @apply flex items-center md:ml-auto mt-auto w-max text-highlight relative after:absolute after:h-0.5 after:bg-highlight after:bottom-0 after:rounded-sm after:left-0 after:w-0 after:hover:w-full after:transition-all after:duration-150 after:ease-in-out;
+}
+
+.close-button {
+  @apply absolute -top-2 -right-2;
+}
+
+.edit-button {
+  @apply self-center z-[1];
+}

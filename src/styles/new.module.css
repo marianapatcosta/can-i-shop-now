@@ -1,0 +1,15 @@
+.new-product__form  {
+  @apply border border-secondary px-2 py-6 rounded-lg;
+}
+
+.new-product__form > div {
+  @apply flex gap-4 flex-col md:flex-row mb-10;
+}
+
+.new-product__form > div > div {
+  @apply w-full;
+}
+
+.new-product__form > button {
+  @apply w-full sm:w-32 block mb-4 mx-auto;
+}

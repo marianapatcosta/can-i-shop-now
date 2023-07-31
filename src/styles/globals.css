@@ -1,0 +1,39 @@
+@tailwind base;
+
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg-primary: #fdf2f8;
+  --color-bg-secondary: #fce7f3;
+  --color-text-primary: #11181d;
+}
+
+.dark {
+  --color-bg-primary: #11181d;
+  --color-bg-secondary: #1f2937;
+  --color-text-primary: #ffffff;
+}
+
+@layer base {
+  html {
+    font-family: 'Inter';
+    @apply bg-primary text-text;
+  }
+
+  html * {
+    @apply m-0 p-0 box-border;
+  }
+
+  li {
+    @apply list-none;
+  }
+
+  h1 {
+    @apply text-3xl text-center font-bold mb-4;
+  }
+
+  h2 {
+    @apply text-xl font-bold;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "areYouSureDeleteUser": "Tem a certeza que pretende eliminar a sua conta?",
+  "city": "Cidade",
+  "country": "País",
+  "darkMode": "Modo escuro",
+  "deleteAccount": "Eliminar conta",
+  "deleteAccount1": "Eliminar conta?",
+  "email": "E-mail",
+  "english": "inglês",
+  "enterCity": "Enter your city",
+  "enterZipCode": "Enter your zip code",
+  "locale": "Idioma",
+  "logout": "Terminar sessão",
+  "name": "Nome",
+  "portuguese": "português",
+  "profile": "Perfil do utilizador",
+  "settings": "Definições",
+  "zipCode": "Código postal"
+}

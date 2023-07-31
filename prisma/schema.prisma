@@ -1,0 +1,120 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url = env("POSTGRES_PRISMA_URL") // uses connection pooling
+  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
+  shadowDatabaseUrl = env("POSTGRES_URL_NON_POOLING") // used for migrations
+}
+
+model Product {
+  id             String   @id @default(cuid())
+  productId      String
+  store          String
+  name           String
+  url            String
+  originalPrice  Int
+  currentPrice   Int
+  currency       String
+  allSizes       String
+  availableSizes String
+  photoUrl       String
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @default(now())
+
+  productHistory ProductHistory[]
+  productUser    ProductUser[]
+
+  @@map("products")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String
+  email         String    @unique
+  emailVerified DateTime?
+  image         String?
+  zipCode       String?
+  city          String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @default(now())
+
+  productUser ProductUser[]
+  accounts    Account[]
+  sessions    Session[]
+
+  @@map("users")
+}
+
+model Account {
+  id                 String  @id @default(cuid())
+  userId             String
+  type               String
+  provider           String
+  providerAccountId  String
+  refresh_token      String?
+  access_token       String?
+  expires_at         Int?
+  token_type         String?
+  scope              String?
+  id_token           String?
+  session_state      String?
+  oauth_token_secret String?
+  oauth_token        String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@map("accounts")
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("sessions")
+}
+
+model VerificationToken {
+  id         Int      @id @default(autoincrement())
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+  @@map("verificationtokens")
+}
+
+model ProductHistory {
+  id             String   @id @default(cuid())
+  productId      String
+  originalPrice  Int
+  currentPrice   Int
+  availableSizes String
+  createdAt      DateTime @default(now())
+
+  product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@map("product_history")
+}
+
+model ProductUser {
+  id           String @id @default(cuid())
+  productId    String
+  userId       String
+  sizesToWatch String
+
+  product Product @relation(fields: [productId], references: [id])
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([productId, userId])
+  @@map("product_user")
+}

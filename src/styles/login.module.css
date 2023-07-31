@@ -1,0 +1,4 @@
+
+.login__button > button {
+  @apply w-full sm:w-32 block mb-4;
+}

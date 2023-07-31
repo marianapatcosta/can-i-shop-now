@@ -1,0 +1,19 @@
+.button {
+  @apply flex items-center justify-center text-inherit py-[0.1rem] px-1 border text-white border-highlight font-bold h-10 shadow-lg rounded-lg select-none cursor-pointer transition duration-300 ease-in-out hover:brightness-110 disabled:cursor-not-allowed disabled:pointer-events-none disabled:opacity-50 active:scale-110;
+}
+
+.button--loading {
+  @apply disabled:pointer-events-none;
+}
+
+.button--primary {
+  @apply bg-highlight border-transparent;
+}
+
+.button--secondary {
+  @apply text-highlight;
+}
+
+.button--action {
+  @apply p-0 w-7 h-7 rounded-full bg-secondary flex items-center justify-center hover:brightness-100 hover:-translate-y-1 transition-transform duration-150 ease-in-out;
+}

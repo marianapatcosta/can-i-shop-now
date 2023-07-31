@@ -1,0 +1,24 @@
+.products {
+  @apply flex flex-col gap-5 mb-16;
+}
+
+.products__toolbar {
+  @apply flex gap-4 justify-end mb-6;
+}
+
+.products__no-products > button {
+  @apply block mx-auto mt-8;
+}
+
+.products__no-products > p {
+  @apply text-center text-lg font-bold mt-16;
+}
+
+.products__add-product {
+  @apply bg-highlight text-white w-10 h-10 fixed bottom-1 right-1 md:right-[50%] md:-mr-[24rem];
+}
+
+.products__add-product > svg {
+  @apply text-white;
+}
+

@@ -1,0 +1,15 @@
+.input input {
+  @apply block w-full h-10 leading-6 ml-[1px] border border-secondary rounded-lg bg-inherit text-inherit shadow-lg pl-2 disabled:select-none disabled:cursor-default disabled:opacity-70 focus:outline-1 focus:outline-highlight placeholder:text-inherit placeholder:opacity-70;
+}
+
+.input__tooltip {
+  @apply top-6 left-0 min-w-[12rem] invisible opacity-0 transition-all -translate-y-[2rem];
+}
+
+.input--error input {
+  @apply border-red-800;
+}
+
+.input__error {
+  @apply text-sm font-bold mt-2 pl-2 text-red-800;
+}

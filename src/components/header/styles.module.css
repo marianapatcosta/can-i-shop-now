@@ -1,0 +1,15 @@
+.header {
+  @apply select-none bg-secondary fixed top-0 left-0 right-0 shadow-[0_3px_3px_-3px_rgba(0,0,0,0.3)] w-full h-headerHeight z-10;
+}
+
+.header__content {
+  @apply md:max-w-3xl mx-auto flex justify-between text-3xl font-bold italic p-2 h-full my-auto;
+}
+
+.header__link--disabled {
+  @apply pointer-events-none cursor-default;
+}
+
+.header__link {
+  @apply hover:scale-[1.1] transition;
+}
