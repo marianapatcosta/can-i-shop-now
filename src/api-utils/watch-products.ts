@@ -8,7 +8,7 @@ import {
 } from '@/types'
 import { PromisePool } from '@supercharge/promise-pool'
 import { prisma } from './lib/prisma'
-import { scrapeProduct } from './productScrappers'
+import { scrapeProduct } from './product-scrappers'
 import { pascalCaseToSentenceCase, unitToCentConverter } from '@/utils'
 import { getFormattedPrice, isProductUpdated } from './utils'
 import { getProductsUsers } from './repositories/products/getProductsUsers'

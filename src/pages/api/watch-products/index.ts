@@ -11,7 +11,7 @@ import {
 } from '@/types'
 import { PromisePool } from '@supercharge/promise-pool'
 import { prisma } from '@/api-utils/lib/prisma'
-import { scrapeProduct } from '@/api-utils/productScrappers'
+import { scrapeProduct } from '@/api-utils/product-scrappers'
 import { pascalCaseToSentenceCase, unitToCentConverter } from '@/utils'
 import { getFormattedPrice, isProductUpdated } from '@/api-utils/utils'
 import { getProductsUsers } from '@/api-utils/repositories/products/getProductsUsers'

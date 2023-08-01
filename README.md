@@ -14,17 +14,15 @@ The application was developed with the following technologies:
 - Prisma
 - Postgressql
 
-
 ![can-i-shop-now](https://github.com/marianapatcosta/can-i-shop-now/assets/43031902/d5641bec-7ed9-41fa-b99d-b043458fefeb)
-
 
 Check it [here](https://can-i-shop-now.vercel.app/)!
 
 ## Add a Store
 
 - Add new Store in `Store` type in `src\types.ts` file
-- Implement a new scrapper in `src\api-utils\productScrappers` directory
-- Add scrapper to `scrapperMapper` in `src\api-utils\productScrappers\index.ts` file
+- Implement a new scrapper in `src\api-utils\product-scrappers` directory
+- Add scrapper to `scrapperMapper` in `src\api-utils\product-scrappers\index.ts` file
 
 ## Getting Started
 

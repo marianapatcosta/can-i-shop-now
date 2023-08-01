@@ -6,7 +6,7 @@ import {
   isProductUpdated,
   orderSizes,
 } from '@/api-utils/utils'
-import { scrapeProduct } from '@/api-utils/productScrappers'
+import { scrapeProduct } from '@/api-utils/product-scrappers'
 import {
   PRODUCT_NOT_EXIST,
   SIZES_NOT_AVAILABLE,

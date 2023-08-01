@@ -39,3 +39,5 @@ next-env.d.ts
 app.log
 .vercel
 .env*.local
+
+src/api-utils/product-scrappers/*
